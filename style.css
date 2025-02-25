@@ -72,6 +72,12 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: transform 0.5s ease; /* Optional: adds subtle animation */
+}
+
+/* Optional: subtle zoom effect on page load */
+.hero.loaded .hero-img {
+    transform: scale(1.02);
 }
 
 .hero-overlay {
