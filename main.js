@@ -29,6 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+
+    // Add a loaded class to hero section after image loads
+    window.addEventListener('load', () => {
+        document.querySelector('.hero').classList.add('loaded');
+    });
+
     // Form submission handling
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
